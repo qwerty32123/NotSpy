@@ -1,8 +1,11 @@
-# NotSpy++
+# NotSpy
 
-NotSpy++ is a lightweight, command-line Windows message spying tool for 32-bit applications. It is designed to capture the flow of `SendMessage` and `PostMessage` calls for a target process and save them in a detailed, structured JSON format for later analysis.
+NotSpy is a lightweight, command-line Windows message spying tool for 32-bit applications. It is designed to capture the flow of `SendMessage` and `PostMessage` calls for a target process and save them in a detailed, structured JSON format for later analysis.
 
 This tool is useful for understanding how a Windows application works, for debugging, and for gathering data to automate user input.
+
+Inspired by classic utilities like Microsoft's Spy++ but built for the command line, NotSpy++ is a lightweight yet-powerful utility for spying on the Windows message stream of any target 32-bit or 64-bit application. It was created to address a key limitation of traditional GUI-based tools: the inability to easily export the raw message flow for offline analysis, scripting, or automated testing.
+
 
 ## Features
 
