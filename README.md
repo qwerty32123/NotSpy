@@ -1,4 +1,9 @@
 # NotSpy
+<p align="center">
+  <img src="https://img.shields.io/badge/platform-windows-0078d4.svg" alt="Platform: Windows">
+  <img src="https://img.shields.io/badge/arch-x86 | x64-blue.svg" alt="Architecture: x86/x64">
+  <img src="https://img.shields.io/badge/license-MIT-green.svg" alt="License: MIT">
+</p>
 
 NotSpy is a lightweight, command-line Windows message spying tool for 32-bit applications. It is designed to capture the flow of `SendMessage` and `PostMessage` calls for a target process and save them in a detailed, structured JSON format for later analysis.
 
@@ -6,7 +11,22 @@ This tool is useful for understanding how a Windows application works, for debug
 
 Inspired by classic utilities like Microsoft's Spy++ but built for the command line, NotSpy++ is a lightweight yet-powerful utility for spying on the Windows message stream of any target 32-bit or 64-bit application. It was created to address a key limitation of traditional GUI-based tools: the inability to easily export the raw message flow for offline analysis, scripting, or automated testing.
 
+This tool is invaluable for debugging complex UI behavior, understanding application internals, reverse engineering, or gathering data to create automation and input replay scripts.
 
+<!-- Optional but highly recommended: Add a GIF here showing it in action! -->
+<!-- ![NotSpy++ in Action](https://path.to.your/demo.gif) -->
+
+## Key Features
+
+-   **Dual Architecture Support:** Separate builds for monitoring both **32-bit (x86)** and **64-bit (x64)** applications.
+-   **Complete Message Capture:** Hooks both `WH_CALLWNDPROC` and `WH_CALLWNDPROCRET` to log messages both on arrival and after they are handled, including their results.
+-   **Dual Output Formats:**
+    -   **Binary (`.dat`):** A high-performance, compact format ideal for fast logging and programmatic replay.
+    -   **JSON (`.json`):** A detailed, human-readable format with decoded parameters for easy analysis and inspection.
+-   **Intelligent Parameter Decoding:** Automatically decodes parameters for common messages like `WM_MOUSEMOVE`, `WM_KEYDOWN`, `WM_NCHITTEST`, and more.
+-   **Zero Dependencies:** Built with the native Win32 API and a single-header JSON library for maximum portability. No installation required.
+
+---
 ## Features
 
 -   Hooks both `WH_CALLWNDPROC` and `WH_CALLWNDPROCRET` to capture messages *before* and *after* they are processed.
