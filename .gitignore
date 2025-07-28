@@ -1,0 +1,43 @@
+# Compiled Object files
+*.obj
+*.o
+
+# Precompiled Headers
+*.pch
+
+# Compiled Dynamic Libraries
+*.dll
+*.so
+*.dylib
+
+# Compiled Static Libraries
+*.lib
+*.a
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Visual Studio files
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.user
+Debug/
+Release/
+x64/
+x86/
+build/
+.vs/
+
+# CLion / CMake files
+.idea/
+cmake-build-*/
+
+# Runtime output
+messages.json
+
+# Other
+*.exp
+*.txt
